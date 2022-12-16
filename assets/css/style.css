@@ -52,9 +52,7 @@ main {
     flex-direction: column;
 }
 
-.snippet-card:hover,
-.snippet-card:hover .title-box,
-.snippet-card:hover .title-box:hover {
+.snippet-card:hover::after {
     box-shadow: inset 0px 0px 10px var(--title-color);
 }
 
