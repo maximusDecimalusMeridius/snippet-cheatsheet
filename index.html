@@ -18,11 +18,13 @@
             <p class="description">Use these three properties to create a Flexbox row layout.</p>
             <div class="code-block">
                 <code>
-                    .row {<br>
-                    &#8195&#8195display: flex;<br>
-                    &#8195&#8195flex-direction: row;<br>
-                    &#8195&#8195flex-wrap: wrap;<br>
-                    }<br>
+                    <pre>
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+                    </pre>
                 </code>
             </div>
         </section>
@@ -31,10 +33,12 @@
             <p class="description">Use this to create a Flexbox column layout.</p>
             <div class="code-block">
                 <code>
-                    .column {<br>
-                        &#8195&#8195display: flex;<br>
-                        &#8195&#8195flex-direction: column;<br>
-                        }<br>
+                    <pre>
+.column {
+    display: flex;
+    flex-direction: column;
+    }
+                    </pre>
                 </code>
             </div>
         </section>
@@ -43,10 +47,14 @@
             <p class="description">Build a 12-column layout using CSS Grid.</p>
             <div class="code-block">
                 <code>
-                    .column {<br>
-                        &#8195&#8195display: flex;<br>
-                        &#8195&#8195flex-direction: column;<br>
-                        }<br>
+                    <pre>
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+repeat(12 1fr);
+}
+                    </pre>
                 </code>
             </div>
         </section>
@@ -55,10 +63,15 @@
             <p class="description">This will create a background linear gradient from top to bottom.</p>
             <div class="code-block">
                 <code>
-                    .column {<br>
-                        &#8195&#8195display: flex;<br>
-                        &#8195&#8195flex-direction: column;<br>
-                        }<br>
+                    <pre>
+.linear-gradient-background {
+    background-image: linear- 
+gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rbga(232, 102, 236, 0.6) 100%
+   );
+}
+                    </pre>
                 </code>
             </div>
         </section>
@@ -67,10 +80,19 @@
             <p class="description">Use transition and box shadow to glow on hover.</p>
             <div class="code-block">
                 <code>
-                    .column {<br>
-                        &#8195&#8195display: flex;<br>
-                        &#8195&#8195flex-direction: column;<br>
-                        }<br>
+                    <pre>
+.code-card .code-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px
+rbga(232, 102, 236, 1), 0px 0px 15px
+rgba(232, 102, 236, 1);
+}
+                    </pre>
                 </code>
             </div>
         </section>
@@ -79,10 +101,12 @@
             <p class="description">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
             <div class="code-block">
                 <code>
-                    .column {<br>
-                        &#8195&#8195display: flex;<br>
-                        &#8195&#8195flex-direction: column;<br>
-                        }<br>
+                    <pre>
+                        .card-header {
+                            position: relative;
+                            margin-top: -20px;
+                        }
+                    </pre>
                 </code>
             </div>
         </section>

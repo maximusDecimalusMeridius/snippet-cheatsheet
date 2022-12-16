@@ -38,21 +38,25 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 1 0 33.3%;
+    flex: 1 0 33;
     justify-content: space-evenly;
 }
 
 .snippet-card {
-    min-height: 250px;
-    width: 300px;
+    min-height: 200px;
+    width: 350px;
     border: 1px dashed white;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
 }
 
-.snippet-card:hover::after {
-    box-shadow: inset 0px 0px 10px var(--title-color);
+.snippet-card:hover, .snippet-card:hover .title-box {
+    box-shadow: inset 0px 0px 10px #00ffd5, 0px 0px 20px #00ffd5;
+}
+
+.snippet-card, .snippet-card:hover .title-box {
+    transition: box-shadow .3s linear;
 }
 
 .title-box {
@@ -92,6 +96,8 @@ main {
     padding: 1em;
     color: white;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 footer {
