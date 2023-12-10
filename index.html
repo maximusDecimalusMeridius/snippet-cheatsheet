@@ -110,6 +110,27 @@ rgba(232, 102, 236, 1);
                 </code>
             </div>
         </section>
+        <section class="snippet-card">
+            <div class="title-box">Trigger Reflow and Restart Animation</div>
+            <p class="description">JavaScript to trigger a reflow and forcing an animation to stop and restart by scheduling a setTimeout function</p>
+            <div class="code-block">
+                <code>
+                    <pre>
+const element = document.
+    getElementById('myAnimation');
+
+// Trigger a re-flow
+element.offsetWidth;
+
+// Restart the animation
+element.style.animation = 'none';
+setTimeout(() => {
+    element.style.animation = '';
+}, 0);
+                    </pre>
+                </code>
+            </div>
+        </section>
     </main>
     <footer>
         <h2>Made with love by AG</h2>
